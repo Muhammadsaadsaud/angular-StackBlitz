@@ -1,0 +1,158 @@
+<div id="container">
+  <div id="row">
+    <form>
+      <br>
+        <h4>Vistrax Server</h4>
+        <hr style="width:100%">
+    <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="exampleInputEmail1">Hostname/ IP Address :</label>
+      <input type="url" class="form-control" id="url"  placeholder="http://localhost or xxx.xxx.xxx">
+      <small id="hostNameHelp" class="form-text text-muted">
+        Qualified Hostname/IP address Enter * to bind to all network adapters. Deactivate port by using 0 (zero)
+      </small>
+
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="port">Port(HTTP):</label>
+      <input type="number" class="form-control" id="port" placeholder="HTTP port">
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="ports">Port(HTTPS):</label>
+        <input type="number" class="form-control" id="ports" placeholder="HTTPS port">
+      </div>
+
+      <br>
+
+      <h4>Microsoft SQL Server</h4>
+      <hr style="width:100%">
+      <div class="col-md-4 mb-3">
+        <label for="driver">Driver:</label>
+        <select id="driver" class="form-control">
+          <option selected>Microsoft OLE DB Provider for SQL Server (SQL OLEDB)</option>
+          <option>Another driver..</option>
+        </select>
+      </div>
+        <div class="col-md-4 mb-3">
+            <label for="address">Address:</label>
+            <select id="address" class="form-control">
+              <option selected>Custom data source (TCP/IP)</option>
+              <option>Another address..</option>
+            </select>
+            <small id="addressHelp" class="form-text text-muted">
+                Qualified Hostname/IP address and optional Database Instance:
+                e.g. 127.0.0.1 or 127.0.0.1\INSTANCE Port:1433 Packet Size: 4096
+              </small>
+          </div>
+          <div class="col-md-4 mb-3">
+              <label for="portSql">Port:</label>
+              <input type="number" class="form-control" id="portSql" placeholder="SQL port">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="packetSize">Packet Size:</label>
+                <input type="number" class="form-control" id="packetSize" placeholder="packet size">
+              </div>
+
+                
+                <div class="col-md-4 mb-3">
+                  <label for="database">Database:</label>
+                  <input type="text" class="form-control" id="database" placeholder="database">
+                  <small id="databaseHelp" class="form-text text-muted">
+                     Main catalog e.g. VISTRAX
+                    </small>
+                </div>
+
+                  <div class="form-row align-items-center">
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2">Test Connection</button>
+                    </div>
+                  </div>
+               
+                
+
+
+              <div class="col-md-4 mb-3">
+                  <label for="authenticationMode">Authentication Mode:</label>
+                  <input type="text" class="form-control" id="authenticationMode" placeholder="authentication mode">
+                </div>
+
+                  <div class="col-md-4 mb-3">
+                    <label for="user">User:</label>
+                    <input type="text" class="form-control" id="username" placeholder="user">
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                      <label for="pswd">Password:</label>
+                      <input type="password" class="form-control" id="pswd" placeholder="password">
+                    </div>
+                    
+                    <div class="col-md-4 mb-3">
+                        <label for="inputState">Encrypted Database Connection:</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Disable</option>
+                          <option>Enable</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-4 mb-3"></div>
+                      <div class="col-md-4 mb-3"></div>
+                      
+                      <br>
+
+                      
+                      <h4>LDAP / ADS Authentication</h4>
+                      <hr style="width:100%">
+
+                      <div class="col-md-4 mb-3">
+                          <label for="path">Path:</label>
+                          <input type="text" class="form-control" id="path" placeholder="database">
+                          <small id="pathHelp" class="form-text text-muted">
+                             LDAP or Active Directory Path: e.g. LDAP://HostName[:PortNumber][/DistinguishedName]
+                            </small>
+                        </div>
+                        
+                        <div class="form-row align-items-center col-md-4 mb-3">
+                            <div class="col-auto">
+                              <button type="submit" class="btn btn-primary mb-2">Test Connection</button>
+                            </div>
+                          </div>
+
+                        <div class="col-md-4 mb-3"></div>
+                        <br>
+
+
+                        <div class="col-md-4 mb-3">
+                            <label for="domain">Domain:</label>
+                            <input type="url" class="form-control" id="domain"  placeholder="http://localhost or xxx.xxx.xxx">
+                            <small id="domainHelp" class="form-text text-muted">
+                              Qualified Domain Name / IP Address
+                            </small>
+                          </div>
+                          <br>
+
+                          <div class="form-row align-items-center col-md-4 mb-2">
+                              <div class="col-auto">
+                                 
+                                      <button type="submit" class="btn btn-primary mr-2">OK</button>
+                                  
+                                      <button type="button" class="btn btn-primary mr-2">Cancel</button>
+                                  
+                                 
+                                      <button type="button" class="btn btn-primary">Help</button>
+                              
+                              </div>
+                            </div>
+
+
+
+                         
+                      
+                     
+                    
+
+  </div>
+  </form>
+
+
+</div>
+</div>

@@ -1,0 +1,18 @@
+
+
+.Absolute-Center.is-Responsive {
+  width: 400%; 
+  height: 400%;
+  min-width: 200px;
+  max-width: 400px;
+  
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+#container {
+  margin:0 auto;
+  width:1000px;
+}
