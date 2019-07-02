@@ -1,0 +1,31 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css") ;
+/* You can add global styles to this file, and also import other style files */
+body{
+
+	font-family: Lato;
+	color:white;
+}
+html{
+	height:100%;
+}
+#content{
+	color:black;
+text-align: center;
+padding-top: 20%;
+text-shadow: 0px 4px 3px rgba(0,0,0,0,0.4),
+0px 8px 13px rgba(0,0,0,0,0.1),
+0px 18px 23px rgba(0,0,0,0,0.1);
+font-family: lato;
+}
+h1, h3{
+    font-family: Lato;
+    color:black;
+    font-weight: 700;
+    line-height: 1.1;
+    
+}
+hr{
+	width: 500px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
